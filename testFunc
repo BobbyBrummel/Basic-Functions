@@ -1,0 +1,31 @@
+def getValue():
+    x = input("Enter an integer:")
+    return x
+
+def validateValue(value):
+    while True:
+        try:
+            value = int(value)
+            return True
+        except:
+            return False
+
+
+def findArea(a, b):
+    return int(a) * int(b)
+
+
+
+>>> getValue()
+Enter an integer:4
+'4'
+>>> validateValue(3)
+True
+>>> validateValue(e)
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    validateValue(e)
+NameError: name 'e' is not defined
+>>> findArea(3, 5)
+15
+>>> 
